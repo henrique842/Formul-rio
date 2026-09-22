@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de CSS - Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Quiz sobre CSS</h1>
+    <p class="instrucao">Responda às perguntas abaixo selecionando uma alternativa para cada linha e clique em "Enviar
+        Respostas".</p>
+
+    <form id="quizForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Pergunta</th>
+                    <th>Alternativas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pergunta 1 -->
+                <tr>
+                    <td class="pergunta-col">1. O que significa a sigla "CSS"?</td>
+                    <td class="opcoes-col">
+                        <label><input type="radio" name="p1" value="errado"> (a) Creative Style Sheets</label>
+                        <label><input type="radio" name="p1" value="certo"> (b) Cascading Style Sheets</label>
+                        <label><input type="radio" name="p1" value="errado"> (c) Computer Style System</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 2 -->
+                <tr>
+                    <td class="pergunta-col">2. Qual propriedade é usada para alterar a cor de fundo de um elemento?
+                    </td>
+                    <td class="opcoes-col">
+                        <label><input type="radio" name="p2" value="errado"> (a) color</label>
+                        <label><input type="radio" name="p2" value="certo"> (b) background-color</label>
+                        <label><input type="radio" name="p2" value="errado"> (c) bg-color</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 3 -->
+                <tr>
+                    <td class="pergunta-col">3. Como você seleciona um elemento com o id "header" no CSS?</td>
+                    <td class="opcoes-col">
+                        <label><input type="radio" name="p3" value="certo"> (a) #header</label>
+                        <label><input type="radio" name="p3" value="errado"> (b) .header</label>
+                        <label><input type="radio" name="p3" value="errado"> (c) header</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 4 -->
+                <tr>
+                    <td class="pergunta-col">4. Qual propriedade altera o tamanho da fonte de um texto?</td>
+                    <td class="opcoes-col">
+                        <label><input type="radio" name="p4" value="errado"> (a) text-size</label>
+                        <label><input type="radio" name="p4" value="errado"> (b) font-style</label>
+                        <label><input type="radio" name="p4" value="certo"> (c) font-size</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 5 -->
+                <tr>
+                    <td class="pergunta-col">5. Qual propriedade/valor fixa um elemento na tela mesmo ao rolar a página?
+                    </td>
+                    <td class="opcoes-col">
+                        <label><input type="radio" name="p5" value="errado"> (a) position: relative</label>
+                        <label><input type="radio" name="p5" value="certo"> (b) position: fixed</label>
+                        <label><input type="radio" name="p5" value="errado"> (c) position: absolute</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="botao-container">
+            <button type="button" onclick="calcularPontuacao()">Enviar Respostas</button>
+        </div>
+
+        <div id="resultado"></div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
